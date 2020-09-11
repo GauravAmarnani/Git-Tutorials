@@ -1,0 +1,77 @@
+The following file contains all the information about the topics covered in the 01 Video of 
+Dan's tutorial on Git and Github series of 48 videos. 
+_______________________________________________________________________________________________
+It will basically cover all the commands on git bash with a little info on first line (syntax 
+type) and example of that syntax on the other : 
+[syntax]
+[example]. 
+_______________________________________________________________________________________________
+1.	# for comment. 
+	# Introduction to Git , By Gaurav.
+
+Here while using the commands on the git bash , we can use "#" to make git know that it is a 
+comment.
+_______________________________________________________________________________________________
+2.	git clone (url) 
+	git clone https://github.com/GauravAmarnani/GauravAmarnani.git
+
+Here by using "git clone" we create a clone of the (.git) repo we are providing. 
+Git then establishes a connection with Github and it is collecting all the object and data it 
+needs from GauravAmarnani repos and sending them over the internet hyper tubes to our local box
+here and then it uncompresses it locally and checks everything out and stores everything.
+_______________________________________________________________________________________________
+3.	git log 
+	git log
+
+So the thing with git clone is that it clones not only the data of the repo but also the list 
+of all the commits along with the commit objects. 
+We can view these enhancements using git log. The following is an example of what it'll display
+after we write "git log" : 
+
+commit f9725af02a3d254dbdab1997bc53bf81fcecd0e0
+Author: GauravAmarnani <gauravamarnani1213@gmail.com>
+Date:   Thu Sep 10 18:55:35 2020 +0530
+
+Added Info file for package (com.byGaurav.beanAnnotation) in Spring core.
+
+(There will be many more commits in the list like this).
+And you don't need any connection to the remote here to see this history. 
+That means if you lost the internet you can still see the history of this project.
+This is what it means when people talk about decentralized.
+_______________________________________________________________________________________________
+4.	git status 
+	git status 
+
+We can get information about the current state about the local repo. Like the information about
+the files in which changes have been made , if we have added some new files , if we have 
+deleted some files. 
+_______________________________________________________________________________________________
+5.	git add (filename)
+	git add Info.txt
+
+This means that you are adding the latest version of Info.txt present inside your local repo 
+inside the staging area.
+By "git add" we are telling git that we want these changes to be staged in the index. 
+*Index is anything that you see when you do a "git status".
+*Staging area lets you define something that you are going to commit.
+_______________________________________________________________________________________________
+6.	git config --global user.email ("email_id")
+	git config --global user.email "gauravamarnani12@gmail.com"
+
+This is a git's way of knowing about the identity of the person commiting a change in the repo.
+This helps a lot in maintaining the transperancy between the developers and there will be no 
+ambiguity in identifying which commit was made by who.
+_______________________________________________________________________________________________
+7.	git config --global user.name ("user_name")
+	git config --global user.name "Gaurav Amarnani"
+
+This is a git's way of knowing about the identity of the person commiting a change in the repo.
+This helps a lot in maintaining the transperancy between the developers and there will be no 
+ambiguity in identifying which commit was made by who.
+_______________________________________________________________________________________________
+8.	git commit -m ("Commit_message")
+	git commit -m "Made changes in Info.txt"
+
+This is the description we provide for the changes we made to make it easy for other developers
+to identify the changes. This is the text message we saw during the "git log" command.
+_______________________________________________________________________________________________
