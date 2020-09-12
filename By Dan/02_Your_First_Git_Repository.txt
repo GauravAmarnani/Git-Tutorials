@@ -1,0 +1,9 @@
+The following file contains all the information about the topics covered in the 02 Video of Dan's tutorial
+on Git and Github series of 48 videos. 
+__________________________________________________________________________________________________________
+1.	git init
+	git init
+
+Using this we can initialize a normal folder into a git repository. 
+*Note : This is just creating a local repo that has it's reach only till your system and not any server.
+
