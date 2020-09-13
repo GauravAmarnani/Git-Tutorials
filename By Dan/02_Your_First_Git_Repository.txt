@@ -6,4 +6,33 @@ ________________________________________________________________________________
 
 Using this we can initialize a normal folder into a git repository. 
 *Note : This is just creating a local repo that has it's reach only till your system and not any server.
+__________________________________________________________________________________________________________
+2.	touch (filename)
+	touch .gitignore
 
+Using this command we can create a file from the command line argument. 
+Now as we have created a file name (.gitignore) it will help us ignore any file we want to in our repo.
+For example , if you are working with java , as you run programs (.class) files will be generated. You 
+can save it too. But it is not recommended as it is in bytecode form and it is not that compatible with
+the internal git. And a new (.class) file will be generated every time you run the code.
+Another example , if you have a private photo/file that you are using in your code and you don't want any
+one else to see it , you can just add it in (.gitignore).
+__________________________________________________________________________________________________________
+3.	git checkout (filename)
+	git checkout Info.txt
+
+This command is used to unstage a file. That is basically removing it from the staged area that it enters
+after adding it using (git add).
+__________________________________________________________________________________________________________
+4.	git add -u
+	git add -u
+
+This command is used to add ONLY the modified files (The files that are alredy added and some changes are 
+made into them) to the staging area.
+__________________________________________________________________________________________________________
+5.	rm -rf (filename)/(directoryname)
+	rm -rf .git
+
+This command basically deletes the mentioned filename. 
+This is a very dangerous command as it cannot be undone. It is not recommended to use lightly.
+__________________________________________________________________________________________________________
